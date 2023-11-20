@@ -1,0 +1,61 @@
+
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Alterar cadastro do filme</mat-card-title>
+      <mat-card-subtitle>&nbsp;</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field class="input" id="id">
+        <mat-label>Id</mat-label>
+        <input
+          placeholder="sla"
+          matInput
+          type="text"
+          [(ngModel)]="id"
+          disabled="true"
+        />
+      </mat-form-field>
+      <mat-form-field class="input" id="titulo">
+        <mat-label>Titulo</mat-label>
+        <input
+          placeholder="Ex. Matrix"
+          matInput
+          type="text"
+          [(ngModel)]="titulo"
+        />
+      </mat-form-field>
+      <mat-form-field class="input" id="diretor">
+        <mat-label>Diretor</mat-label>
+        <input
+          placeholder="Ex. Lana Wachowski"
+          matInput
+          type="text"
+          [(ngModel)]="diretor"
+        />
+      </mat-form-field>
+      <mat-form-field class="input" id="anoLancamento">
+        <mat-label>Ano de lançamento</mat-label>
+        <input
+          placeholder="Ex. 1999"
+          matInput
+          type="text"
+          [(ngModel)]="anoLancamento"
+        />
+      </mat-form-field>
+      <mat-form-field class="input" id="classificacaoEtaria">
+        <mat-label>Classificação Etaria</mat-label>
+        <input
+          placeholder="Ex. 12"
+          matInput
+          type="text"
+          [(ngModel)]="classificacaoEtaria"
+        />
+      </mat-form-field>
+    <mat-card-actions>
+      <button color="warn" mat-stroked-button (click)="alterar()">
+        Alterar
+      </button>
+    </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
+  

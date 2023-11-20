@@ -1,0 +1,51 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Alterar cadastro do cliente</mat-card-title>
+      <mat-card-subtitle>&nbsp;</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field class="input" id="id">
+        <mat-label>Id</mat-label>
+        <input
+          placeholder="sla"
+          matInput
+          type="text"
+          [(ngModel)]="id"
+          disabled="true"
+        />
+      </mat-form-field>
+      <mat-form-field class="input" id="nome">
+        <mat-label>Nome</mat-label>
+        <input
+          placeholder="Ex. Maria"
+          matInput
+          type="text"
+          [(ngModel)]="nome"
+        />
+      </mat-form-field>
+      <mat-form-field class="input" id="email">
+        <mat-label>Email</mat-label>
+        <input
+          placeholder="Ex. maria123@gmail.com"
+          matInput
+          type="text"
+          [(ngModel)]="email"
+        />
+      </mat-form-field>
+      <mat-form-field class="input" id="idade">
+        <mat-label>Idade</mat-label>
+        <input
+          placeholder="Ex. 25"
+          matInput
+          type="text"
+          [(ngModel)]="idade"
+        />
+      </mat-form-field>
+    <mat-card-actions>
+      <button color="warn" mat-stroked-button (click)="alterar()">
+        Alterar
+      </button>
+    </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
+  

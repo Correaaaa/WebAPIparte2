@@ -1,0 +1,30 @@
+### Listar filmes
+GET https://localhost:7048/api/filmes/listar
+
+### Obter um filme específico pelo ID
+GET https://localhost:7048/api/filmes/buscar/2
+
+### Cadastrar um novo filme
+POST https://localhost:7048/api/filmes/cadastrar
+Content-Type: application/json
+
+{
+    "titulo" : "teste",
+    "classificacaoetaria" : 18,
+    "diretor" : "Camarão",
+    "anolancamento" : 2000
+}
+
+### Atualizar um filme existente pelo ID
+PUT https://localhost:7048/api/filmes/alterar/2
+Content-Type: application/json
+
+{
+    "titulo" : "a origem",
+    "classificacaoetaria" : 12,
+    "diretor" : "Christopher Nolan",
+    "anolancamento" : 2006
+}
+
+### Excluir um filme pelo ID
+DELETE https://localhost:7048/api/filmes/deletar/3

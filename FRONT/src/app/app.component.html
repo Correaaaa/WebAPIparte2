@@ -1,0 +1,55 @@
+<!-- Barra de ferramentas -->
+<mat-toolbar color="primary">
+    <button class="menu" mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon> menu </mat-icon>
+    </button>
+    <span>Locadora de Filmes</span>
+  </mat-toolbar>
+  <mat-sidenav-container class="container">
+    <mat-sidenav #sidenav [opened]="true" mode="side">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/pages/clientes/listar">
+          <div class="item">
+            <mat-icon class="icon"> list </mat-icon>
+            <span> Listar Clientes </span>
+          </div>
+        </a>
+        <a mat-list-item routerLink="/pages/filmes/listar">
+          <div class="item">
+            <mat-icon class="icon"> list </mat-icon>
+            <span> Listar Filmes </span>
+          </div>
+        </a>
+        <a mat-list-item routerLink="/pages/emprestimos/listar">
+          <div class="item">
+            <mat-icon class="icon"> list </mat-icon>
+            <span> Listar Empréstimos </span>
+          </div>
+        </a>
+        <a mat-list-item routerLink="/pages/clientes/cadastrar">
+          <div class="item">
+            <mat-icon class="icon"> add </mat-icon>
+            <span> Cadastrar Clientes </span>
+          </div>
+        </a>
+        <a mat-list-item routerLink="/pages/filmes/cadastrar">
+          <div class="item">
+            <mat-icon class="icon"> add </mat-icon>
+            <span> Cadastrar Filmes </span>
+          </div>
+        </a>
+        <a mat-list-item routerLink="/pages/emprestimos/cadastrar">
+          <div class="item">
+            <mat-icon class="icon"> add </mat-icon>
+            <span> Cadastrar Empréstimos </span>
+          </div>
+        </a>
+      </mat-nav-list>
+      <!-- <a routerLink="/pages/cliente/cadastrar"> Cadastrar </a> -->
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+      <!-- Conteúdo -->
+      <router-outlet> </router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
